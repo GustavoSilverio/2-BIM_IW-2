@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE - 01</title>
+</head>
+<body>
+    <h1>NACIONALIDADE</h1>
+    <form>
+        Sua nacionalidade: <input type="text" name="nacio" id="nacio">
+        <input type="button" value="INFORMAR" onclick="avaliar()">
+    <div id="resultado"></div>
+    </form>
+<script>
+function avaliar(){
+    var pais = document.querySelector('input#nacio')
+    var res = document.querySelector('div#resultado')
+    var nac = (pais.value)
+    var nac = nac.toUpperCase()
+    res.innerHTML = `<p>Sua nacionalidade é: ${nac}.</p>`
+    if(nac == 'BRA'){
+    res.innerHTML += `Você é brasileiro`
+    
+}else{
+
+    res.innerHTML += `Você é estrangeiro`
+}
+}
+</script>
+</body>
+</html>
