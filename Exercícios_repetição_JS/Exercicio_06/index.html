@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TESTE</title>
+</head>
+
+<body>
+    <h1>Potenciação</h1>
+    <script>
+        var b = Number(prompt('Digite a base'))
+        var e = Number(prompt('Digite o expoente'))
+        var cont = 0
+        var res = b
+
+        for (var cont = 1; cont < e; cont++) {
+            res = b * b
+            res = res * b
+        }
+        document.write('O resultado do calculo é:')
+        document.write(`<br>${b} ^ ${e}  = ${res}`)
+    </script>
+</body>
+
+</html>

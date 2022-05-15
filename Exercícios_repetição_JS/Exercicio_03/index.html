@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TESTE</title>
+</head>
+
+<body>
+    <h1>População</h1>
+    <script>
+        var pais_a = Number(prompt('Digite um valor para a população do pais A:'));
+        var pais_b = Number(prompt('Digite um valor para a população do pais B:'));
+        var taxa_a = Number(prompt('Digite um valor para a taxa do pais A:'));
+        var taxa_b = Number(prompt('Digite um valor para a taxa do pais B:'));
+        var ano = 0;
+
+        if (pais_b > pais_a) {
+            while (pais_b > pais_a) {
+                pais_a = pais_a + ((pais_a / 100) * taxa_a)
+                pais_b = pais_b + ((pais_b / 100) * taxa_b)
+                ano = ano + 1
+            }
+        }
+        else {
+            while (pais_a > pais_b) {
+                pais_a = pais_a + ((pais_a / 100) * taxa_a)
+                pais_b = pais_b + ((pais_b / 100) * taxa_b)
+                ano = ano + 1
+            }
+        }
+
+        document.write(`Serão ${ano} anos para que a população dos países se igualem ou a menor passe a maior.`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TESTE</title>
+</head>
+
+<body>
+    <h1>População</h1>
+    <script>
+        var pais_a = 80000;
+        var pais_b = 200000;
+        var taxa_a = 0.03;
+        var taxa_b = 0.015;
+        var ano = 0;
+
+        do {
+            pais_a = (pais_a * taxa_a) + pais_a
+            pais_b = (pais_b * taxa_b) + pais_b
+            ano = ano + 1
+        } while (pais_a <= pais_b);
+
+        document.write(`Serão ${ano} anos para que o pais A se iguale ou ultrapasse a população do pais B`)
+    </script>
+</body>
+
+</html>
