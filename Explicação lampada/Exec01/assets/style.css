@@ -1,0 +1,19 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: springgreen;
+}
+
+.content {
+    margin-top: 250px;
+}
+
+.btn {
+    background-color: rgb(2, 255, 129);
+    font-size: xx-large;
+    padding: 15px 100px;
+}
+
+#lampada {
+    font-size: xx-large;
+}
