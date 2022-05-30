@@ -1,0 +1,35 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ano {
+    text-align: center;
+}
+
+.sex {
+    text-align: center;
+}
+
+.but {
+    text-align: center;
+}
+
+.img {
+    text-align: center;
+    width: 30%;
+    height: 40%;
+}
+
+.img_place {
+    text-align: center;
+}
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.resultado {
+    text-align: center;
+
+}
