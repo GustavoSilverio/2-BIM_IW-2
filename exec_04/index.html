@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+</head>
+
+<body>
+    <SCript>
+        var a = Number(prompt('Digite o valor de a'))
+        var b = Number(prompt('Digite o valor de b'))
+        var c = Number(prompt('Digite o valor de c'))
+
+        //Calcular o Deleta
+        //Delta = b² - 4ac
+        //Math.pow(base,exp)
+
+        var delta = (Math.pow(b, 2)) - 4 * a * c
+        console.log('Valor do delta:', delta)
+
+        //Verificar se o delta<0, delta=0 ou delta>0
+        if (delta < 0) {
+            console.log('Não existem raízes pois o Delta é negativo !')
+
+        } else {
+            if (delta == 0) {
+                var x1, x2 = calcula_raiz(b, delta)
+                var x1 = (- b + Math.sqrt(delta)) / 2 * a
+                var x2 = (- b - Math.sqrt(delta)) / 2 * a
+                console.log('Raiz x1 ==>', x1)
+                console.log('Raiz x2 ==>', x2)
+                console.log('Com Delta igual a zero, as duas raízes são iguais !')
+            } else {
+                var x1 = (- b + Math.sqrt(delta)) / 2 * a
+                var x2 = (- b - Math.sqrt(delta)) / 2 * a
+                console.log('Raiz x1 ==>', x1)
+                console.log('Raiz x2 ==>', x2)
+            }
+        }
+
+        function calcula_raiz(b, delta, a) {
+            var x1 = (- b + Math.sqrt(delta)) / 2 * a
+            var x2 = (- b - Math.sqrt(delta)) / 2 * a
+            //console.log('Raiz x1 ==>', x1)
+            //console.log('Raiz x2 ==>', x2)
+        }
+
+        //Calcular as raízes x1 x2
+        //x1 = (-b+raiz,(delta))2a
+        //x2 = (-b-raiz,(delta))2a
+        //Math.sqrt(Valor)
+
+    </SCript>
+</body>
+
+</html>
